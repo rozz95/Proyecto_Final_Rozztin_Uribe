@@ -6,7 +6,7 @@ import Toast from 'react-native-toast-message';
 // IMPORTA TUS PANTALLAS
 import LoginScreen from './screens/LoginScreen';
 import HomeScreen from './screens/HomeScreen';
-import DetailsScreen from './screens/DetailsScreen'; // Si la necesitas también
+import DetailsScreen from './screens/DetailsScreen'; 
 import ProfileScreen from './screens/ProfileScreen';
 
 const Stack = createNativeStackNavigator();
