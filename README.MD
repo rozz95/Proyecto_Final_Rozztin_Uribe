@@ -28,9 +28,8 @@ Editar
 npm install
 3. Instalar Firebase
 bash
-Copiar
-Editar
 npm install firebase
+
 Asegúrate de configurar tu proyecto en Firebase y actualizar el archivo firebase.ts con las credenciales correspondientes.
 
 4. Ejecutar la aplicación
@@ -38,23 +37,7 @@ bash
 Copiar
 Editar
 npx expo start
-🧭 Estructura del Proyecto
-bash
-Copiar
-Editar
-.
-├── components/
-│   └── BookCard.tsx         # Componente para mostrar libros
-├── screens/
-│   ├── DetailsScreen.tsx    # Vista de detalles del libro
-│   ├── HomeScreen.tsx       # Vista principal con lista de libros
-│   ├── LoginScreen.tsx      # Pantalla de login y registro
-│   └── ProfileScreen.tsx    # Perfil del usuario con lista de libros guardados
-├── services/
-│   ├── api.ts               # Servicios para consumir API de libros
-│   └── firebase.ts          # Configuración y servicios Firebase
-├── types.ts                 # Tipos e interfaces del proyecto
-└── App.tsx                  # Entrada principal de la app
+
 🖼️ Descripción de las Vistas
 🔐 LoginScreen
 Pantalla inicial para iniciar sesión o registrarse con correo y contraseña (Firebase Auth).
