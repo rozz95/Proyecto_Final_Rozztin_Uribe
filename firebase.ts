@@ -1,6 +1,7 @@
-import { initializeApp, getApps, getApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
-import { getFirestore } from "firebase/firestore"; // 👈 Nuevo
+import { initializeApp, getApps, getApp } from 'firebase/app';
+import { getAuth } from 'firebase/auth';
+import { getFirestore } from 'firebase/firestore';
+import { getStorage, connectStorageEmulator } from 'firebase/storage';
 
 // Configuración de Firebase
 const firebaseConfig = {
@@ -14,12 +15,14 @@ const firebaseConfig = {
 };
 
 // Inicializar Firebase (solo si aún no está inicializado)
-const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApp();
+const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
 
-// Instancias de servicios
 const auth = getAuth(app);
-const db = getFirestore(app); // 👈 Nueva instancia para Firestore
+const db = getFirestore(app);
+const storage = getStorage(app);
 
-// Exportar
-export { auth, db }; // 👈 Exportas también 'db'
+console.log('🔥 Conectando a Firebase Storage Emulator');
+connectStorageEmulator(storage, '127.0.0.1', 9199);
+
+export { auth, db, storage };
 
