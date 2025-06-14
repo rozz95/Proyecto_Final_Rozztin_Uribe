@@ -14,6 +14,8 @@ Axios
 
 API de Libros
 
+Storage Emulator
+
 📥 Instalación y Configuración
 1. Clonar el repositorio
 bash
@@ -29,13 +31,12 @@ npm install
 3. Instalar Firebase
 bash
 npm install firebase
-
-Asegúrate de configurar tu proyecto en Firebase y actualizar el archivo firebase.ts con las credenciales correspondientes.
+emulator
+firebase emulator:start
+Storage Port 9199
 
 4. Ejecutar la aplicación
-bash
-Copiar
-Editar
+
 npx expo start
 
 🖼️ Descripción de las Vistas
@@ -56,6 +57,8 @@ Vista detallada del libro seleccionado con información ampliada.
 Muestra información del usuario autenticado.
 
 Lista los libros guardados por el usuario.
+
+Foto de Usuario funcion guardar
 
 ⚙️ Manejo de Errores
 Captura de errores en autenticación, conexión y carga de datos.
