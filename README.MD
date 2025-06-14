@@ -1,44 +1,63 @@
-Herramientas
+📚 Aplicación de Libros - React Native + Firebase
+Aplicación móvil desarrollada en React Native usando Expo, que permite a los usuarios visualizar libros desde una API, iniciar sesión, y guardar libros favoritos en su perfil mediante integración con Firebase.
 
-*React Native
-*Expo
-*Firebase
-*Api Libros
-*FireStore
-*axios 
+🚀 Tecnologías Utilizadas
+React Native
 
-Descripcion
+Expo
 
-La aplicacion consiste de 4 vistas 
+Firebase Authentication
 
-DetailsScreen.tsx
-HomeScreen.tsx
-LoginScreen.tsx
-ProfileScreen.tsx
+Firebase Firestore
 
-Componentes
+Axios
 
-BookCard.tsx
+API de Libros
 
-Interfaz Api
+📥 Instalación y Configuración
+1. Clonar el repositorio
+bash
+Copiar
+Editar
+git clone https://github.com/rozz95/Proyecto_Final_Rozztin_Uribe.git
+cd Proyecto_Final_Rozztin_Uribe
+2. Instalar dependencias
+bash
+Copiar
+Editar
+npm install
+3. Instalar Firebase
+bash
+npm install firebase
 
-types.ts
+Asegúrate de configurar tu proyecto en Firebase y actualizar el archivo firebase.ts con las credenciales correspondientes.
 
-Servicio para DB y Api
+4. Ejecutar la aplicación
+bash
+Copiar
+Editar
+npx expo start
 
-firebase.ts
-api.ts
+🖼️ Descripción de las Vistas
+🔐 LoginScreen
+Pantalla inicial para iniciar sesión o registrarse con correo y contraseña (Firebase Auth).
 
-Estos Documentos son los que se realizaron para el estructurar el proyecto, el login es la primera vista
-que tiene un llenado de correo y contrase�a para registrar o iniciar sesion
+Manejo de errores y detección de problemas de conexión a internet.
 
-La vista Home tiene los libros de la api con una imagen titulo y subtitulo, con una funcion para agregar libros a una lista de perfil
+🏠 HomeScreen
+Muestra libros obtenidos desde la API con imagen, título y subtítulo.
 
-La vista Details, da un pantallazo mas grande a un libro seleccionado
+Permite agregar libros a la lista personal del usuario.
 
-La vista Profile muestra el usuario logueado y una lista de los libros que el usuario agrego previamente.
+📖 DetailsScreen
+Vista detallada del libro seleccionado con información ampliada.
 
-Navegabilidad 
+👤 ProfileScreen
+Muestra información del usuario autenticado.
 
-Usando la aplicacion tiene captura de errores, para advertir la falla o el error, asi mismo para la conexion de internet
-tenemos codigo que captura ese error en el login.
+Lista los libros guardados por el usuario.
+
+⚙️ Manejo de Errores
+Captura de errores en autenticación, conexión y carga de datos.
+
+Alertas para informar al usuario de fallos en la aplicación o en la red.
