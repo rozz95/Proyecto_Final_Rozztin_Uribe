@@ -24,14 +24,10 @@ Editar
 git clone https://github.com/rozz95/Proyecto_Final_Rozztin_Uribe.git
 cd Proyecto_Final_Rozztin_Uribe
 2. Instalar dependencias
-bash
-Copiar
-Editar
 npm install
 3. Instalar Firebase
-bash
 npm install firebase
-emulator
+Emulator
 firebase emulator:start
 Storage Port 9199
 
